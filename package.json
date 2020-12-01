@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "git@github.com:wanyuxiao/patrick.git",
   "author": "wanyuxiao <765182773@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start:react": "yarn start",
+    "start:vue": "yarn serve"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
 }
