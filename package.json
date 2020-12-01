@@ -6,8 +6,8 @@
   "author": "wanyuxiao <765182773@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start:react": "yarn start",
-    "start:vue": "yarn serve"
+    "start:react": "lerna run start",
+    "start:vue": "lerna run serve"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
