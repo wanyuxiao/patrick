@@ -117,6 +117,11 @@ module.exports = function (webpackEnv) {
               },
               stage: 3
             }),
+            require('postcss-pxtorem')({
+              exclude: /node_modules/,
+              propList: ['*'],
+              rootValue: 100
+            }),
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
             // which in turn let's users customize the target behavior as per their needs.
@@ -477,7 +482,12 @@ module.exports = function (webpackEnv) {
                   sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment
                 },
                 'sass-loader'
-              ),
+              ).concat({
+                loader: 'sass-resources-loader',
+                options: {
+                  resources: ['../shares/styles/variables.scss', '../shares/styles/mixins.scss']
+                }
+              }),
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
               // Remove this when webpack adds a warning or an error for this.

@@ -7,3 +7,10 @@ export default {
   name: 'Home'
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  font-size: 28px;
+  color: $white;
+}
+</style>
