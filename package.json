@@ -1,0 +1,8 @@
+{
+  "name": "patrick",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wanyuxiao/patrick.git",
+  "author": "wanyuxiao <765182773@qq.com>",
+  "license": "MIT"
+}
