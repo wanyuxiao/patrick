@@ -28,6 +28,6 @@ module.exports = {
   },
   chainWebpack: config => {
     config.devServer.port('8000')
-    config.resolve.alias.set('@', resolve('src'))
+    config.resolve.alias.set('@', resolve('../patrick-vue'))
   }
 }
